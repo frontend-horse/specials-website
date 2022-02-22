@@ -1,0 +1,24 @@
+{
+  "id": "622d74d7-beb8-4fe9-b631-e1412915455b",
+  "uid": "quae-minus-quaerat",
+  "type": "sponsor",
+  "data": {
+    "title": "architect innovative e-business",
+    "logo": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"
+    },
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Ullamco in laborum consequat Lorem consequat aliquip amet consectetur fugiat aute voluptate.",
+        "spans": []
+      }
+    ]
+  }
+}

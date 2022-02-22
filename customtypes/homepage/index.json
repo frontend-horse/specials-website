@@ -1,0 +1,33 @@
+{
+  "id": "homepage",
+  "label": "Homepage",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "title": {
+        "config": {
+          "label": "title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      }
+    },
+    "SEO": {
+      "metaTitle": {
+        "config": {
+          "label": "metaTitle",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "metaDescription": {
+        "config": {
+          "label": "metaDescription",
+          "placeholder": ""
+        },
+        "type": "Text"
+      }
+    }
+  }
+}

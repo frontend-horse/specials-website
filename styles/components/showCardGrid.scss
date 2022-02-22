@@ -1,0 +1,13 @@
+.show-card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-4);
+
+  &__card {
+    background: var(--surface-2);
+    border-radius: var(--radius-3);
+    border: 1px solid var(--border-color);
+    max-width: var(--size-15);
+    padding: var(--size-4);
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "guest",
+  "label": "Guest",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "name": {
+        "config": {
+          "label": "name",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "uid": {
+        "config": {
+          "label": "uid",
+          "placeholder": ""
+        },
+        "type": "UID"
+      },
+      "avatar": {
+        "config": {
+          "label": "avatar",
+          "constraint": {},
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "blurb": {
+        "config": {
+          "label": "blurb",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        },
+        "type": "StructuredText"
+      },
+      "twitterUsername": {
+        "config": {
+          "label": "twitterUsername",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "websiteUrl": {
+        "config": {
+          "label": "websiteUrl",
+          "placeholder": ""
+        },
+        "type": "Text"
+      }
+    }
+  }
+}

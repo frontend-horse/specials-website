@@ -1,0 +1,26 @@
+{
+  "id": "2c22c604-c9c9-44cc-ab15-beed6940e99c",
+  "uid": "qui-voluptatem-ipsam",
+  "type": "guest",
+  "data": {
+    "name": "reinvent e-business synergies",
+    "avatar": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
+    },
+    "blurb": [
+      {
+        "type": "paragraph",
+        "text": "Ullamco proident laboris incididunt quis dolor duis aliquip culpa amet voluptate excepteur veniam enim excepteur voluptate.",
+        "spans": []
+      }
+    ],
+    "twitterUsername": "utilize e-business metrics",
+    "websiteUrl": "redefine efficient action-items"
+  }
+}

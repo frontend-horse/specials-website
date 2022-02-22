@@ -1,0 +1,73 @@
+{
+  "id": "be71f609-7532-47dd-aa0d-2e1e0f84f446",
+  "uid": "rem-quod-reiciendis",
+  "type": "special",
+  "data": {
+    "title": "architect back-end bandwidth",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Officia ea sunt amet et commodo dolore enim exercitation officia nisi cupidatat.",
+        "spans": []
+      }
+    ],
+    "sponsors": [
+      {
+        "sponsor": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "sponsor": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "sponsor": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "sponsor": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      }
+    ],
+    "talks": [
+      {
+        "talk": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      },
+      {
+        "talk": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "talk": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "talk": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      },
+      {
+        "talk": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "cssvar.files": ["./node_modules/open-props/open-props.min.css"],
+
+  // you can also add support for autocomplete in other file extensions
+  "cssvar.extensions": ["css", "html", "js", "jsx", "tsx"]
+}

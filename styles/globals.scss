@@ -1,0 +1,16 @@
+@import "open-props/style";
+@import "open-props/normalize";
+
+.layout {
+  --container-width: 1024px;
+
+  width: min(var(--container-width), 100% - 3rem);
+  margin-inline: auto;
+}
+
+.container {
+  --container-width: 40ch;
+
+  width: min(var(--container-width), 100% - 3rem);
+  margin-inline: auto;
+}
