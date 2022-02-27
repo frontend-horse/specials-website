@@ -1,3 +1,38 @@
-h1 {
+@import url("//hello.myfonts.net/count/42fe71");
+@font-face {
+  font-family: "Recoleta";
+  src: url("/fonts/RecoletaBold/font.woff2") format("woff2"),
+    url("/fonts/RecoletaBold/font.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("/fonts/RecoletaMedium/font.woff2") format("woff2"),
+    url("/fonts/RecoletaMedium/font.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-serif: "Recoleta";
+}
+
+h1,
+h2,
+h3 {
   color: var(--brand);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+  font-weight: bold;
 }
