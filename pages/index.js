@@ -1,11 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
 import ShowCardGrid from "../components/ShowCardGrid";
 
 import { createClient } from "../prismicio";
-// import SliceZone from "next-slicezone";
-// import * as Slices from "../slices";
 
 export default function Home({ page, events }) {
   console.log("🚀 ~ file: index.js ~ line 10 ~ Home ~ events", events[0]);
