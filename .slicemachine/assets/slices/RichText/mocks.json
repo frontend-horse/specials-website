@@ -1,0 +1,17 @@
+[
+  {
+    "variation": "default-slice",
+    "name": "Default slice",
+    "slice_type": "rich_text",
+    "items": [],
+    "primary": {
+      "text": [
+        {
+          "type": "paragraph",
+          "text": "Sit occaecat aute sit voluptate. Ad veniam voluptate labore Lorem esse commodo consectetur do. Laboris deserunt ut aliqua do voluptate magna eu esse aute consequat irure veniam.",
+          "spans": []
+        }
+      ]
+    }
+  }
+]

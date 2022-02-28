@@ -11,5 +11,19 @@
     "guest": {},
     "talk": {},
     "event": {}
+  },
+  "slices": {
+    "RichText": {
+      "default-slice": {
+        "primary": {
+          "text": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    }
   }
 }
