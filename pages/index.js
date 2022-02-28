@@ -4,8 +4,6 @@ import ShowCardGrid from "../components/ShowCardGrid";
 import { createClient } from "../prismicio";
 
 export default function Home({ page, events }) {
-  console.log("🚀 ~ file: index.js ~ line 10 ~ Home ~ events", events[0]);
-  console.log("🚀 ~ file: index.js ~ line 10 ~ Home ~ page", page);
   return (
     <div>
       <Head>
