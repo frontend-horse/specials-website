@@ -24,6 +24,7 @@ export async function getStaticPaths(props) {
 
   return {
     paths: events.map(({ uid }) => ({ params: { slug: [uid] } })) || [],
+    fallback: false,
   };
 }
 export async function getStaticProps({ params }) {
