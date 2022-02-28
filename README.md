@@ -32,6 +32,10 @@ To use certain features of SliceMachine, like Slice Simulator, you'll need to al
 
 If you're using VSCode, this project contains a Task that will run both servers with a keyboard shortcut. `CMD/Ctrl-Shift-B` will launch both servers at the same time.
 
-## Prismic
+## Styling
+
+For styles we're using SCSS and [Open Props](https://open-props.style/).
+
+## Prismic Content
 
 The content is kept in Prismic. If you need access to the content, reach out to Alex Trost in the community Discord and he can add you to the Prismic repository.
