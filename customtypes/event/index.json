@@ -30,6 +30,17 @@
           ]
         },
         "type": "Select"
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "surftacular_header": {
+              "type": "SharedSlice"
+            }
+          }
+        }
       }
     },
     "Sponsors": {

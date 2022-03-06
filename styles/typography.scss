@@ -1,8 +1,8 @@
 @import url("//hello.myfonts.net/count/42fe71");
 @font-face {
   font-family: "Recoleta";
-  src: url("/fonts/RecoletaBold/font.woff2") format("woff2"),
-    url("/fonts/RecoletaBold/font.woff") format("woff");
+  src: url("/fonts/rc_b.woff2") format("woff2"),
+    url("/fonts/rc_b.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -10,8 +10,8 @@
 
 @font-face {
   font-family: "Recoleta";
-  src: url("/fonts/RecoletaMedium/font.woff2") format("woff2"),
-    url("/fonts/RecoletaMedium/font.woff") format("woff");
+  src: url("/fonts/rc_m.woff2") format("woff2"),
+    url("/fonts/rc_m.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;

@@ -1,6 +1,7 @@
-@use "reset";
-@use "globals";
-@use "theme";
-@use "typography";
-@use "components/button";
-@use "components/showCardGrid";
+@import "reset";
+@import "globals";
+@import "theme";
+@import "typography";
+@import "index_page";
+@import "components/button";
+@import "components/showCardGrid";

@@ -24,6 +24,30 @@
           }
         }
       }
-    }
+    },
+    "SurftacularHeader": [
+      {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "surftacular_header",
+        "items": [],
+        "primary": {
+          "title": [
+            {
+              "type": "heading2",
+              "text": "Scale transparent blockchains",
+              "spans": []
+            }
+          ],
+          "openingParagraph": [
+            {
+              "type": "paragraph",
+              "text": "Sunt est cillum est exercitation magna. Nulla deserunt aliqua magna cupidatat laborum ut consectetur est consequat dolore tempor ad sit excepteur exercitation. Elit est veniam sint amet elit ex quis incididunt voluptate exercitation ipsum.",
+              "spans": []
+            }
+          ]
+        }
+      }
+    ]
   }
 }

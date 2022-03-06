@@ -1,7 +1,10 @@
 import Head from "next/head";
 import { createClient } from "../prismicio";
+import SliceZone from "next-slicezone";
 
-export default function Event({ page }) {
+import resolver from "../sm-resolver.js";
+
+export default function Event({ page, slices }) {
   return (
     <div>
       <Head>
@@ -13,6 +16,9 @@ export default function Event({ page }) {
         <div className="layout">
           <h1>{page.eventTitle}</h1>
         </div>
+        {!!slices?.length && (
+        <SliceZone slices={slices}  resolver={resolver} />
+        )}
       </main>
     </div>
   );
@@ -32,7 +38,7 @@ export async function getStaticProps({ params }) {
 
   const client = createClient();
   const doc = await client.getByUID("event", uid);
-
+  console.log('document', doc)
   const page = {
     ...doc.data,
     slugs: doc.slugs,
@@ -41,6 +47,6 @@ export async function getStaticProps({ params }) {
   };
 
   return {
-    props: { page },
+    props: { page, slices: doc.data?.slices },
   };
 }

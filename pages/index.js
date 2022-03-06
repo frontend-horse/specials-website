@@ -1,5 +1,6 @@
 import Head from "next/head";
 import ShowCardGrid from "../components/ShowCardGrid";
+import Image from "next/image"
 
 import { createClient } from "../prismicio";
 
@@ -9,9 +10,12 @@ export default function Home({ page, events }) {
       <Head>
         <title>{page.metaTitle}</title>
         <meta name="description" content={page.metaDescription} />
+		{/* TODO: Opengraph Info */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+	  <header className="index-header">
+		<Image src="/logo.svg" width="160" height="90" alt=""/>
+	  </header>
       <main>
         <div className="layout">
           <h1>{page.title}</h1>

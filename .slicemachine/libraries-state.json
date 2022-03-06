@@ -56,6 +56,78 @@
           "extension": "js"
         },
         "screenshotPaths": {}
+      },
+      "surftacular_header": {
+        "library": "slices",
+        "id": "surftacular_header",
+        "name": "SurftacularHeader",
+        "description": "SurftacularHeader",
+        "model": {
+          "id": "surftacular_header",
+          "type": "SharedSlice",
+          "name": "SurftacularHeader",
+          "description": "SurftacularHeader",
+          "variations": [
+            {
+              "id": "default-slice",
+              "name": "Default slice",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "SurftacularHeader",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Introduce the event",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                },
+                "openingParagraph": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Opening Paragraph",
+                    "placeholder": "Tell us something surftacular!",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default-slice": {
+            "variation": "default-slice",
+            "name": "Default slice",
+            "slice_type": "surftacular_header",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Brand value-added e-commerce",
+                  "spans": []
+                }
+              ],
+              "openingParagraph": [
+                {
+                  "type": "paragraph",
+                  "text": "Pariatur veniam deserunt pariatur id pariatur id culpa anim elit ullamco.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "js"
+        },
+        "screenshotPaths": {}
       }
     }
   }

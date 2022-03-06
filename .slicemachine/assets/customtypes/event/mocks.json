@@ -1,21 +1,15 @@
 {
-  "id": "4e9d0576-c635-4b2a-aa15-fdc8582f1936",
-  "uid": "earum-et-necessitatibus",
+  "id": "7e6f5ad8-006c-4385-adfa-c6ee9cb80950",
+  "uid": "ullam-excepturi-eligendi",
   "type": "event",
   "data": {
-    "eventTitle": "scale B2B portals",
-    "status": "Inactive",
+    "eventTitle": "deploy bricks-and-clicks systems",
+    "status": "Featured",
     "sponsors": [
       {
         "sponsor": {
           "link_type": "Web",
-          "url": "https://slicemachine.dev"
-        }
-      },
-      {
-        "sponsor": {
-          "link_type": "Web",
-          "url": "http://google.com"
+          "url": "https://prismic.io"
         }
       },
       {
@@ -27,7 +21,19 @@
       {
         "sponsor": {
           "link_type": "Web",
-          "url": "http://google.com"
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "sponsor": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "sponsor": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
         }
       },
       {
@@ -41,25 +47,7 @@
       {
         "talk": {
           "link_type": "Web",
-          "url": "http://google.com"
-        }
-      },
-      {
-        "talk": {
-          "link_type": "Web",
-          "url": "http://google.com"
-        }
-      },
-      {
-        "talk": {
-          "link_type": "Web",
-          "url": "http://google.com"
-        }
-      },
-      {
-        "talk": {
-          "link_type": "Web",
-          "url": "https://prismic.io"
+          "url": "http://twitter.com"
         }
       },
       {
