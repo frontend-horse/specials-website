@@ -38,7 +38,7 @@ export async function getStaticProps({ params }) {
 
   const client = createClient();
   const doc = await client.getByUID("event", uid);
-  console.log('document', doc)
+//   console.log('document', doc)
   const page = {
     ...doc.data,
     slugs: doc.slugs,

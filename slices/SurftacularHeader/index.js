@@ -1,6 +1,6 @@
-import { useRef, useEffect } from 'react'
+import { useRef, useEffect, useState } from 'react'
 import { PrismicRichText } from '@prismicio/react'
-import { Canvas, useFrame } from 'react-ogl/web'
+import { Canvas } from 'react-ogl/web'
 
 import MainImage from '../../public/summer-22/img/main.jpg'
 import DepthImage from '../../public/summer-22/img/depth.jpg'
@@ -9,13 +9,34 @@ import BokehImage from '../../public/summer-22/img/bokeh.jpg'
 import styles from './styles.module.css'
 
 const SurftacularHeader = ({ slice }) => {
+	const [textures, setTextures] = useState({})
 	const canvasRef = useRef()
-	// function update(e) {
-	// 	if (e.type == 'mousemove') {
-	// 		mouse.value.set(e.offsetX / window.innerWidth, window.scrollY / window.innerHeight)
-	// 	} else if (e.type == 'scroll') {
-	// 		mouse.value.set(mouse.value[0], window.scrollY / window.innerHeight)
-	// 	}
+	const mainImg = new Image()
+	const depthImg = new Image()
+	const bokehImg = new Image()
+
+	useEffect(() => {}, [textures])
+	mainImg.onload = () => {
+		let texs = textures
+		texs.mainImg = mainImg
+		setTextures(texs)
+		console.log(textures)
+	}
+	depthImg.onload = () => {
+		let texs = textures
+		texs.depthImg = depthImg
+		setTextures(texs)
+		console.log(textures)
+	}
+	bokehImg.onload = () => {
+		let texs = textures
+		texs.bokehImg = bokehImg
+		setTextures(texs)
+		console.log(textures)
+	}
+	mainImg.src = MainImage.src
+	depthImg.src = DepthImage.src
+	bokehImg.src = BokehImage.src
 
 	function Header(props) {
 		const mainTexRef = useRef()
@@ -27,20 +48,24 @@ const SurftacularHeader = ({ slice }) => {
 		return (
 			<mesh
 				{...props}
-				ref={meshRef}
 				onPointerMove={({ layerX }) => {
 					mouse.value = [
 						layerX / window.innerWidth,
 						window.scrollY / window.innerHeight
 					]
-					console.log(mainTexRef.current);
+					console.log(meshRef.current)
+					console.log(bokehTexRef.current)
 				}}
 			>
 				<geometry
 					position={{ size: 2, data: new Float32Array([-1, -1, 3, -1, -1, 3]) }}
 					uv={{ size: 2, data: new Float32Array([0, 0, 2, 0, 0, 2]) }}
 				/>
+				<texture image={textures.mainImg} ref={mainTexRef} />
+				<texture image={textures.depthImg} ref={depthTexRef} />
+				<texture image={textures.bokehImg} ref={bokehTexRef} />
 				<program
+					ref={meshRef}
 					vertex={
 						/*glsl*/ `
 					attribute vec2 uv;
@@ -75,12 +100,11 @@ const SurftacularHeader = ({ slice }) => {
 						bokehTex: { value: bokehTexRef.current },
 						mainTex: { value: mainTexRef.current },
 						depthTex: { value: depthTexRef.current },
-						aspect: { value: canvasRef.current.clientWidth / canvasRef.current.height },
+						aspect: {
+							value: canvasRef.current.clientWidth / canvasRef.current.height
+						}
 					}}
 				/>
-				<texture image={MainImage} ref={mainTexRef} />
-				<texture image={DepthImage} ref={depthTexRef} />
-				<texture image={BokehImage} ref={bokehTexRef} />
 				<post
 					fragment={
 						/* glsl */ `
@@ -107,9 +131,12 @@ const SurftacularHeader = ({ slice }) => {
 	return (
 		<>
 			<section className={styles.headerCanvas}>
-				<Canvas ref={canvasRef}>
-					<Header />
-				</Canvas>
+				<pre>{JSON.stringify(textures, null, 2)}</pre>
+				{Object.keys(textures).length >= 3 && (
+					<Canvas ref={canvasRef}>
+						<Header />
+					</Canvas>
+				)}
 			</section>
 			<section>
 				<PrismicRichText
